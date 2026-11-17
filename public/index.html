@@ -3,15 +3,237 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>App Template</title>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 64px auto; padding: 0 16px; line-height: 1.6; color: #1b1f24; }
-    code { background: #eef0f3; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <title>Pulse — Product analytics for teams that ship</title>
+  <meta name="description" content="Pulse gives product teams real-time dashboards, funnels, retention and alerts — so you can see what is working and ship with confidence.">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
 </head>
 <body>
-  <h1>It works</h1>
-  <p>This app was created from <code>anuj-orbit/app-template</code> and deployed by Coolify.</p>
-  <p>Status: <a href="/health">/health</a></p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="26" height="26" rx="8" fill="currentColor" opacity="0.12"></rect>
+          <path d="M5 15h3l2.5-6 3 10 2.5-7 1.8 3H23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span class="brand-name">Pulse</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#contact">Get started</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <p class="eyebrow">Product analytics</p>
+        <h1 id="hero-heading">See what your users actually do.</h1>
+        <p class="lede">
+          Pulse turns raw product events into real-time dashboards, funnels and retention
+          curves — so your team can spot what is working, fix what isn't, and ship faster.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#contact">Start a conversation</a>
+          <a class="btn btn-ghost btn-lg" href="#features">Explore features</a>
+        </div>
+        <ul class="hero-points">
+          <li>5-minute setup, no data team required</li>
+          <li>Privacy-friendly by default</li>
+          <li>Integrates with your existing stack</li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="panel">
+          <div class="panel-head">
+            <span class="panel-title">Weekly active users</span>
+            <span class="panel-badge">Live</span>
+          </div>
+          <p class="panel-metric">24,318</p>
+          <p class="panel-trend">▲ 12.4% vs last week</p>
+          <svg class="spark" viewBox="0 0 320 96" role="img" aria-hidden="true" focusable="false">
+            <polyline points="0,80 40,70 80,74 120,52 160,58 200,38 240,44 280,22 320,16"
+              fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-heading">
+      <div class="section-head">
+        <h2 id="features-heading">Everything you need to understand your product</h2>
+        <p class="section-sub">One place for the numbers your team asks about every week.</p>
+      </div>
+      <ul class="card-grid">
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M3 3v18h18"></path><path d="M7 15l3.5-4 3 2.5L20 7"></path>
+            </svg>
+          </span>
+          <h3>Real-time dashboards</h3>
+          <p>Watch signups, activations and key actions update the moment they happen — no overnight wait.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M4 5h16l-6 7v6l-4 2v-8z"></path>
+            </svg>
+          </span>
+          <h3>Funnels</h3>
+          <p>Trace the exact steps between first visit and paid plan, and see where users drop off.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M20 12a8 8 0 1 1-2.3-5.6"></path><path d="M20 4v5h-5"></path>
+            </svg>
+          </span>
+          <h3>Retention</h3>
+          <p>Cohort retention curves show whether the people you win actually come back week after week.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 0 1-3.4 0"></path>
+            </svg>
+          </span>
+          <h3>Alerts</h3>
+          <p>Get a ping the moment a metric spikes or stalls, with thresholds you define and tune.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="9" cy="8" r="3"></circle><path d="M3 20a6 6 0 0 1 12 0"></path><path d="M17 7h5"></path><path d="M17 12h5"></path><path d="M17 17h5"></path>
+            </svg>
+          </span>
+          <h3>Segmentation</h3>
+          <p>Slice every metric by plan, geography, referral source or any property you send us.</p>
+        </li>
+        <li class="card">
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <path d="M9 3H5a2 2 0 0 0-2 2v4"></path><path d="M15 3h4a2 2 0 0 1 2 2v4"></path><path d="M9 21H5a2 2 0 0 1-2-2v-4"></path><path d="M15 21h4a2 2 0 0 0 2-2v-4"></path><circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </span>
+          <h3>Integrations</h3>
+          <p>Send events from your web app, mobile clients or warehouse with a few lines of code.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section section-alt" id="how" aria-labelledby="how-heading">
+      <div class="section-head">
+        <h2 id="how-heading">How it works</h2>
+        <p class="section-sub">Three steps from signup to your first insight.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Add the snippet</h3>
+          <p>Drop our lightweight tracker into your app and start sending events in minutes.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Explore your data</h3>
+          <p>Build dashboards, funnels and cohorts from the events already flowing in.</p>
+        </li>
+        <li class="step">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Ship with confidence</h3>
+          <p>Set alerts, share reports with your team, and let the data guide each release.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="section-head">
+        <h2 id="pricing-heading">Simple pricing that scales with you</h2>
+        <p class="section-sub">Start free, upgrade when your event volume grows. No per-seat surprises.</p>
+      </div>
+      <ul class="pricing-grid">
+        <li class="plan">
+          <h3>Starter</h3>
+          <p class="plan-price"><span>$0</span>/month</p>
+          <p class="plan-note">Up to 100k events</p>
+        </li>
+        <li class="plan plan-featured">
+          <p class="plan-tag">Most popular</p>
+          <h3>Growth</h3>
+          <p class="plan-price"><span>$49</span>/month</p>
+          <p class="plan-note">Up to 2M events</p>
+        </li>
+        <li class="plan">
+          <h3>Scale</h3>
+          <p class="plan-price"><span>Custom</span></p>
+          <p class="plan-note">Unlimited events</p>
+        </li>
+      </ul>
+      <p class="pricing-cta">
+        <a class="btn btn-primary" href="#contact">Talk to us about your plan</a>
+      </p>
+    </section>
+
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="section-head">
+        <h2 id="contact-heading">Get in touch</h2>
+        <p class="section-sub">Tell us about your product and we'll get back to you within one business day.</p>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" maxlength="100" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="company">Company <span class="optional">(optional)</span></label>
+          <input type="text" id="company" name="company" maxlength="100" autocomplete="organization">
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+        </div>
+
+        <div class="hp-field" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button class="btn btn-primary" id="submit-button" type="submit">Send message</button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Pulse</span>
+        <p>Product analytics for teams that ship.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer-copy">&copy; 2026 Pulse Analytics. All rights reserved.</p>
+  </footer>
 </body>
 </html>

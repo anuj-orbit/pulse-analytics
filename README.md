@@ -28,3 +28,11 @@ npm start          # http://localhost:3000
 - repo **secrets** `COOLIFY_API_URL` and `COOLIFY_DEPLOY_TOKEN`
 
 Without them, the deploy step is skipped.
+
+## Pulse (product analytics landing page)
+
+Marketing landing page for Pulse with a contact form. Static page in `public/` (`index.html`, `styles.css`, `app.js`).
+
+- `POST /api/contact` — JSON `{name, email, company?, message}` (limits 100/254/100/2000 chars; hidden `website` honeypot). Returns `201 {ok:true}`, `400 {ok:false,errors}`, `429` (5 requests/min/IP), `503` when `DATABASE_URL` is unset, `500` on DB error.
+- Env: `DATABASE_URL` (Postgres; the `contact_submissions` table is created automatically on first submission), `PORT`.
+- Submissions are written with parameterised queries only.
